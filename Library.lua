@@ -231,14 +231,14 @@ local Library = {
     HudRegistry = {};
 
     -- colors and font --
-    FontColor = Color3.fromRGB(255, 255, 255);
-    MainColor = Color3.fromRGB(28, 28, 28);
-    BackgroundColor = Color3.fromRGB(20, 20, 20);
+    FontColor = Color3.fromRGB(246, 246, 246);
+    MainColor = Color3.fromRGB(30, 29, 29);
+    BackgroundColor = Color3.fromRGB(19, 19, 19);
 
-    AccentColor = Color3.fromRGB(0, 85, 255);
+    AccentColor = Color3.fromRGB(197, 197, 197);
     DisabledAccentColor = Color3.fromRGB(142, 142, 142);
 
-    OutlineColor = Color3.fromRGB(50, 50, 50);
+    OutlineColor = Color3.fromRGB(41, 41, 41);
     DisabledOutlineColor = Color3.fromRGB(70, 70, 70);
 
     DisabledTextColor = Color3.fromRGB(142, 142, 142);
@@ -1126,14 +1126,14 @@ local Templates = { -- TO-DO: do it for missing elements.
         Title = "No Title",
         AutoShow = false,
         Position = UDim2.fromOffset(175, 50),
-        Size = UDim2.fromOffset(0, 0),
+        Size = UDim2.fromOffset(835, 560),
         AnchorPoint = Vector2.zero,
         TabPadding = 1,
         MenuFadeTime = 0.2,
         NotifySide = "Left",
         ShowCustomCursor = true,
         UnlockMouseWhileOpen = true,
-        Center = false
+        Center = true
     },
 
     --// Elements \\--
@@ -6590,9 +6590,9 @@ function Library:CreateWindow(...)
 
     local WindowLabel = Library:CreateLabel({
         Position = UDim2.new(0, 7, 0, 0);
-        Size = UDim2.new(0, 0, 0, 25);
+        Size = UDim2.new(1, -14, 0, 25);
         Text = WindowInfo.Title or "";
-        TextXAlignment = Enum.TextXAlignment.Left;
+        TextXAlignment = Enum.TextXAlignment.Center;
         ZIndex = 1;
         Parent = Inner;
     })
